@@ -1,0 +1,451 @@
+﻿
+a:not([href]):not([tabindex]) {
+    color: var(--KOLORCZCIONKIMENU);
+}
+.belka_stypendia {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+    padding: 5px;
+    text-align: left;
+}
+
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+.dxtcLite_iOS > .dxtc-stripContainer .dxtc-activeTab {
+    background-color: var(--KOLORPRZYCISKOW);
+}
+.navbar-nav {
+    color: var(--KOLORCZCIONKIMENU);
+}
+#sidebar ul p {
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+.navbar-nav .nav-link {
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+.footer__inside {
+    background-color: var(--KOLORGLOWNY);
+}
+
+.stopkaindex {
+    background-color: var(--KOLORGLOWNY);
+}
+
+body {
+    background-color: var(--KINT_GLOBALKOLORTLAPRZEDZALOGOWANIEM);
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-divider {
+    border-color: var(--KOLORCZCIONKIMENU);
+}
+
+#sidebar,
+.notice__background {
+    background-color: var(--KOLORGLOWNY);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active,
+.btn-outline-danger:not(:disabled):not(.disabled).active,
+.show > .btn-outline-danger.dropdown-toggle {
+    background-color: var(--KOLORPODSWPRZYCISK);
+    border-color: var(--KOLORPODSWPRZYCISK);
+}
+
+.btn-success:not(:disabled):not(.disabled):active,
+.btn-success:not(:disabled):not(.disabled).active,
+.show > .btn-success.dropdown-toggle {
+    background-color: var(--KOLORPODSWPRZYCISK);
+    border-color: var(--KOLORPODSWPRZYCISK);
+}
+
+#sidebar .sidebar-header,
+#sidebar ul li.active > a, .box .icon .image,
+#content .box__header .icon .image {
+    background-color: var(--KOLORMENUGORNE);
+}
+
+.dropdown-menu {
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.navbar {
+    background-color: var(--KOLORGLOWNY);
+}
+
+.dropdown-menu {
+    background-color: var(--KOLORPRZYCISKOW);
+}
+
+#sidebar .sidebar-header {
+    background-color: var(--KOLORGLOWNY);
+}
+
+#sidebar li a,
+.navbar .navbar-nav li a {
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+#sidebar ul li.active > a {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a:focus {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: var(--KOLORCZCIONKIMENU);
+    background-color: var(--KOLORPRZYCISKOW);
+}
+
+.btn-outline-warning {
+    border-color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus,
+.btn-outline-warning:focus:active,
+.btn-outline-warning:not(:disabled):not(.disabled):active,
+.btn-outline-warning:not(:disabled):not(.disabled).active,
+.show > .btn-outline-warning.dropdown-toggle {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+form .upload,
+.btn,
+.btn-secondary,
+.dxbButton_iOS {
+    background-color: var(--KOLORPRZYCISKOW);
+}
+
+form .upload label,
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:hover:active,
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:hover:active,
+.dxbButton_iOS {
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.footer a,
+.footer a:visited,
+.footer {
+    color: var(--KOLORCZCIONKIMENU);
+}
+/* Track */
+#sidebar::-webkit-scrollbar-track {
+    background: var(--KOLORGLOWNY);
+}
+
+#sidebar::-webkit-scrollbar-thumb,
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background: var(--KOLORMENUGORNE);
+}
+
+.main-login {
+    border-bottom-color: transparent !important;
+}
+
+#content .box__header {
+    border-bottom-color: var(--KOLORGLOWNY);
+}
+
+.btn-con1 {
+    color: #000 !important;
+    background-color: #FFF !important;
+    border-color: #000 !important;
+}
+
+.btn-con2 {
+    color: #FFF !important;
+    background-color: #221e20 !important;
+    border-color: #000 !important;
+}
+
+.btn-con3 {
+    color: #000 !important;
+    background-color: yellow !important;
+    border-color: #000 !important;
+}
+
+.btn-con4 {
+    color: yellow !important;
+    background-color: #221e20 !important;
+    border-color: #000 !important;
+}
+/*.table-responsive td {
+     color: #000 !important;
+}
+*/
+.dxgvControl_iOS,
+.dxgvDisabled_iOS {
+    color: black !important;
+}
+
+span.white.fop.mr-2.mobile-margin {
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+a.btn.btn-outline-warning {
+    border-color: transparent;
+}
+
+a.btn.btn-danger.btn-sm {
+    border-color: transparent;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+    background-color: var(--KOLORGLOWNY);
+}
+
+.box .icon .image i,
+#content .box__header .icon .image i {
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.box .icon .image,
+#content .box__header .icon .image {
+    background-color: var(--KOLORPRZYCISKOW);
+    border-color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.btn:hover,
+.field:hover,
+.btn:active,
+.field:active, .btn:focus,
+.field:focus, .btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle,
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show > .btn-dark.dropdown-toggle,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background: var(--KOLORPODSWPRZYCISK);
+    outline-color: transparent;
+    border-color: var(--KOLORCZCIONKIMENU);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.btn:hover > img.przycisk {
+    background: var(--KOLORPODSWPRZYCISK);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.dxucBrowseButton_iOS,
+.dxucControl_iOS .dxucBrowseButton_iOS a {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.btn,
+.field {
+    outline-color: transparent;
+    border-color: transparent;
+}
+
+#scnav .btn-group.mobile-margin a.btn.btn-warning {
+    border: 1px solid var(--KOLORPODSWPRZYCISK);
+}
+
+.navbar .navbar-nav li a {
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+.navbar .navbar-nav li a:hover {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+.navbar .nav-item .dropdown-menu {
+    background-color: var(--KOLORGLOWNY);
+}
+
+#sidebar ul li.active > a,
+#sidebar ul li a:hover,
+#sidebar ul li a:focus {
+    background-color: var(--KOLORGLOWNY);
+    color: var(--KOLORCZCIONKIPODSWIETL);
+    
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--KOLORCZCIONKIMENU);
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--KOLORCZCIONKIMENU);
+    border: 1px solid black;
+}
+
+input[type=button] {
+    background: var(--KOLORPRZYCISKOW);
+    border-radius: 4px;
+    padding: 5px 2px;
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+ul.filtr li.nav-item.active a.nav-link {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.przycisk {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+    border-radius: 3px;
+    padding: 8px 5px;
+    margin-right: 5px;
+}
+
+div.Cookies div.header {
+    background-color: var(--KOLORGLOWNY);
+    filter: brightness(1.2);
+}
+
+div.Cookies div.msg {
+    background-color: var(--KOLORGLOWNY);
+    color: var(--KOLORCZCIONKIMENU);
+    border-color: var(--KOLORGLOWNY);
+}
+
+.msg {
+    background-color: var(--KOLORGLOWNY);
+    color: var(--KOLORCZCIONKIMENU);
+}
+
+.msg a {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.login-button {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+    outline: none;
+}
+
+.login-button:hover {
+    background-color: var(--KOLORPODSWPRZYCISK);
+}
+
+#zalogowany {
+    background-color: var(--KOLORMENUGORNE);
+}
+
+#zalogowany .zakladka-active {
+    color: var(--KOLORMENUGORNECZIONKAPODSW);
+}
+
+#zalogowany .zakladka_normalna {
+    color: var(--KOLORMENUGORNECZCIONK);
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:focus {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+    background-color: var(--KOLORGLOWNY);
+}
+
+.dxgvGroupRow_iOS,
+.dxgvBatchEditChangesPreviewGroupRow_iOS,
+.dxgvGroupPanel_iOS .dxgvHeader_iOS,
+.dxgvAdaptiveGroupPanel_iOS .dxgvHeader_iOS {
+    color: black;
+    border-color: black;
+}
+
+.dxeListBoxItemSelected_iOS,
+.dxeListBoxItemSelected_iOS.dxeListBoxItemHover_iOS,
+.colorBtnVal,
+.colorBtnZatwierdz,
+.btn-danger:not(:disabled):not(.disabled):active,
+.btn-danger:not(:disabled):not(.disabled).active,
+.show > .btn-danger.dropdown-toggle {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+    border-color: var(--KOLORPRZYCISKOW);
+    outline-color: var(--KOLORPRZYCISKOW);
+}
+
+.dxbButton_iOS {
+    border-color: transparent;
+}
+
+.dxgvHeader_iOS a,
+.dxgvHeader_iOS a.dxgvCommandColumnItem_iOS.dxbDisabled_iOS,
+.dxgvCommandColumn_iOS a,
+.dxgvCommandColumn_iOS a.dxgvCommandColumnItem_iOS.dxbDisabled_iOS {
+    color: black;
+}
+
+.biezace {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.btn:focus {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+ul.filtr li.nav-item.active a.nav-link .kolorczcionki {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+#sidebar ul.components {
+    border-bottom-color: transparent;
+}
+
+.btn-warning:not(:disabled):not(.disabled):active,
+.btn-warning:not(:disabled):not(.disabled).active,
+.show > .btn-warning.dropdown-toggle {
+    background-color: var(--KOLORPODSWPRZYCISK);
+    color: var(--KOLORKOLORCZCIONKIPRZYCISKU);
+}
+
+.form-control:focus {
+    border-color: var(--KOLORPODSWPRZYCISK);
+}
+
+#sidebarCollapsex {
+    box-shadow: none !important;
+    outline: none;
+    border-color: transparent;
+}
+
+.form-control:focus,
+.form-control:active {
+    box-shadow: rgba(0,0,0,0)0px 0px !important;
+}
+
+.table:not([class*="TextEditDataControl"]):not([class*="poleAktywne"]):not(DIV) th:not([class*="dx"]):not([class*="poleAktywne"]):not([id*="TextEditDataControl"]),
+.table:not([class*="TextEditDataControl"]):not([class*="poleAktywne"]):not(DIV) td:not([class*="dx"]):not([class*="poleAktywne"]):not([id*="TextEditDataControl"]) {
+    vertical-align: middle;
+}
+
+.aktywny-font {
+    border-color: var(--KOLORCZCIONKIMENU);
+}
+
+.btn-warningCustom {
+    border-color: var(--KOLORCZCIONKIMENU);
+}
+
+.btn-outline-warningCustom {
+    background-color: transparent !important;
+}

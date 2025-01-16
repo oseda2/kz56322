@@ -1,0 +1,505 @@
+﻿/* ================ Zmiany globalne ================ */
+/* Wypośrodkowanie przycisku rozwnięcia w navigacji (tej na górze niebieskiej) */
+.custom-toggler.navbar-toggler {
+    margin-bottom: 0 !important;
+}
+
+.inna_koluma {
+    border: none !important;
+}
+/* Przeniesienie przycisku do zwinięcia navbara */
+#sidebarCollapsex {
+    z-index: 99999;
+    width: 50px;
+    position: fixed;
+    left: calc(100vw - 50px);
+    top: 15vh;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all .4s;
+}
+/* hover do sidebara przycisku */
+#sidebarCollapsex:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
+}
+/* Sidebar hover tansition */
+#sidebar li a {
+    transition: all 0s;
+}
+
+/*Naprawienie wytającego elementu*/
+#sidebar {
+    overflow-x: hidden !important;
+    direction: ltr;
+    scrollbar-width: auto;
+    max-width: 262px;
+}
+/* Scrollbar*/
+#sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-left: 0;
+    border-right: 0;
+   
+    background-color: rgba(4, 14, 105, 0.8);
+}
+
+#sidebar.scroll-show::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+/* sidebar globalny */
+html {
+
+    direction: ltr;
+    scrollbar-color: grey #e4e4e4;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 100px;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    border-left: 0;
+    border-right: 0;
+    background-color: rgba(4, 14, 105, 0.8);
+}
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* przycisk pomoc plany prowadzących */
+.btn-help {
+    padding: 5px !important;
+}
+
+#pomoc {
+ 
+    float: none !important
+}
+
+.sub-item-sidebar .zakladka_srodkowa_podswietlona,
+.sub-item-sidebar .zakladka_podswietlona {
+    color: var(--KOLORCZCIONKIPODSWIETL);
+}
+
+.top-options {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sidebar > ul.list-unstyled.components a[href="/Konto/Wyloguj"] {
+    border-top: 1px solid grey;
+
+}
+
+.mobile-cd-button {
+    float: right;
+    margin-top: 5px;
+}
+
+.pagination {
+    gap: 10px;
+}
+/* przycisk pomoc plany prowadzących */
+.btn-help {
+    padding: 5px !important;
+}
+
+
+/* MEDIAQUERRIES */
+/* ================ Zmiany Sidebar nowy ================ */
+.plany-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 6rem;
+}
+
+#stylLinki {
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#Uploader {
+    width: 100% !important;
+    max-width: 650px !important;
+}
+
+.dxeFocused_iOS {
+    border-color: var(--KOLORPRZYCISKOW);
+}
+
+.dxeCalendarDay_iOS.dxeCalendarSelected_iOS {
+    background-color: var(--KOLORPRZYCISKOW);
+    color: var(--KOLORCZCIONKIPRZYCISKU);
+}
+
+.dxeCalendarButton_iOS {
+    color: var(--KOLORPRZYCISKOW);
+}
+
+@media (max-width:364px) and (-webkit-min-device-pixel-ratio:0) {
+    .pagination {
+        flex-wrap: wrap;
+        gap: 10px;
+        text-align: left;
+        justify-content: start;
+    }
+
+    .poprawka-margina {
+        margin-left: 0 !important;
+    }
+    /* naprawiam tabele */
+    .table-mobile-fix {
+        display: block;
+        width: 100%;
+    }
+
+    .table-mobile-fix > tbody {
+        width: 100%;
+        display: inherit;
+    }
+
+    .padding-0 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    /* fixing multiquestion */
+    .table-mobile-fix .formularz td #ComboBox_7_PoleKontener table,
+    .table-mobile-fix .formularz td #ComboBox_16_PoleKontener table,
+    .table-mobile-fix .formularz td #ComboBox_20_PoleKontener table {
+        width: 100% !important;
+    }
+}
+
+@media(max-width:373px) and (-webkit-min-device-pixel-ratio:0) {
+    /* kontrolka kalendarza */
+    .juan {
+        transform: scale(0.6);
+        left: 0;
+        display: inline-table;
+        position: absolute;
+        top: -70px;
+        width: 90vw !important;
+
+    }
+    
+}
+
+@media(max-width:617px) and (-webkit-min-device-pixel-ratio:0) {
+    .text-justify {
+        text-align: center !important;
+    }
+}
+/* Formularz rekrutacja*/
+@media(max-width:768px) and (-webkit-min-device-pixel-ratio:0) {
+    #SzukajGrid .dxgvDetailRow_iOS.dxgvADR {
+        transform: translateX(-5%);
+    }
+
+    #pcKierunek {
+        overflow-y: scroll !important;
+        height: 199px;
+        display: block;
+        overflow: scroll;
+        max-width: 90vw;
+        font-size: 9.5px;
+    }
+
+    #SzukajGrid {
+        font-size: 10px;
+        white-space: normal;
+    }
+
+    #popControl_PW-1 > .dxpc-mainDiv.dxpc-shadow {
+        display: block;
+        max-width: 100vw !important;
+    }
+
+    .dxeFTM,
+    .dxeHFC {
+        max-width: 175px !important;
+    }
+
+    .mobile-pole-fix table.dxeButtonEdit_iOS {
+        max-width: 195px;
+    }
+
+    .formularz {
+        display: flex;
+        flex-direction: column;
+        width: 68vw;
+        max-width: 263px;
+        position: relative;
+        text-align: left;
+    }
+
+    .formularz > th {
+        width: 100% !important;
+    }
+
+    .formularz > th[scope=row] {
+        border-bottom: none !important;
+    }
+
+    .mobile-cd-button {
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        float: none;
+    }
+
+    .formularz td center .poleAktywne .avatar-center-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .formularz td center .poleAktywne table {
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+
+    .mobile-pole-fix {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 8px;
+
+    }
+
+    .mobile-pole-fix > td:first-child {
+        width: 100%;
+    }
+
+    .mobile-pole-fix > td:first-child #DevBezRamki > table.dxeButtonEditSys.dxeButtonEdit_iOS.DevBezRamki.dxeIPadSys,
+    .mobile-pole-fix > td:first-child #DevBezRamki > table#ComboBox_68 {
+        width: 100% !important;
+    }
+
+    .inna_koluma {
+        align-self: flex-start;
+        border: none !important;
+    }
+
+    .fix-buttons-upload {
+        width: 80%;
+    }
+
+    .ddlm_inna > tbody tr {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .ddlm_inna > tbody tr .PoleWymagane {
+        transform: translateX(0) !important;
+    }
+
+    .poleNieaktywne {
+        max-width: 100%;
+    }
+
+    .poleAktywne {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio:0) {
+    /* Podstrony w sidebarze */
+    .sub-item-sidebar #index_tekst {
+        padding: 0;
+        color: white;
+        font-size: 16px !important;
+        transform: translateY(5%);
+    }
+    /* Podstrony w sidebarze */
+    .sub-item-sidebar {
+        background-color: var(--KOLORMENUGORNE);
+        padding-left: 20px;
+        border-bottom: 1px solid var(--KOLORMENUGORNE);
+        border-top: 1px dotted var(--KOLORMENUGORNE);
+        /* outline:none;*/
+    }
+
+    .sub-item-sidebar .zakladka_srodkowa_podswietlona,
+    .sub-item-sidebar .zakladka_podswietlona {
+        color: var(--KOLORCZCIONKIPODSWIETL);
+    }
+
+    /* Podstrony w sidebarze tabelki */
+    .sub-item-sidebar .zakladka_srodkowa_podswietlona,
+    .sub-item-sidebar .zakladka_srodkowa {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--KOLORCZCIONKIPODSWIETL);
+        font-size: 16px !important;
+        margin-bottom: 10px;
+        border-bottom: 1px dotted #032c60;
+    }
+
+    .sub-item-sidebar .zakladka.zakladka_podswietlona {
+        padding: 0 !important;
+    }
+
+    .sub-item-sidebar .zakladka_srodkowa a {
+        opacity: 1 !important;
+        padding: 0 !important;
+        text-align: left;
+    }
+
+    .sub-item-sidebar .zakladka_lewa_podswietlona,
+    .sub-item-sidebar .zakladka_lewa {
+        display: none;
+    }
+
+    .sub-item-sidebar .zakladka_prawa_podswietlona,
+    .sub-item-sidebar .zakladka_prawa {
+        display: none !important;
+    }
+
+    .buttons a,
+    .buttons button {
+        background-color: #1c467a;
+    }
+    /* bottom line */
+    #content > .row {
+        border-bottom: 1px solid #8198b5;
+        margin-bottom: 10px;
+    }
+
+    #scnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+    #content > .row > .col-sm-12 {
+        padding: 0;
+    }
+
+    .buttons a {
+        position: absolute;
+        top: 10px;
+        left: calc(99vw - 131px);
+    }
+
+    #icons-navbar-mobile #scnav {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+/* without mediquerry */
+.fix-buttons-upload {
+    width: 280px;
+}
+/* przycisk pomoc plany prowadzących */
+.btn-help {
+    padding: 5px !important;
+}
+
+#pomoc {
+    /*margin-top: -38px;*/
+}
+
+@media (max-width:280px) and (-webkit-min-device-pixel-ratio:0) {
+    .pagination {
+        justify-content: center !important
+    }
+}
+
+/* przyciski rezerwacja sal */
+@media (max-width:364px) and (-webkit-min-device-pixel-ratio:0) {
+    .pagination {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .image-fix {
+        width: 100% !important;
+        margin-top: 5px;
+    }
+
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div {
+        width: 80% !important;
+    }
+
+    .padding-0 {
+        padding: 0 !important;
+    }
+    .oglCzyZal {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:600px) and (-webkit-min-device-pixel-ratio:0){
+    #BackButton
+    #BackButton_CD,
+    #ClearButton_CD,
+    #NextButton,
+    #SaveAndCancelButton,
+    #NextButton_CD,
+    #BackButton,
+    #ClearButton,
+    #SaveAndCancelButton,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#ClearButton_CD,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#ClearButton,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#SaveAndCancelButton,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#SaveAndCancelButton_CD,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item {
+        width: 100% !important;
+    }
+
+    #ClearButton_CD,
+    SaveAndCancelButton_CD,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#ClearButton_CD,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#ClearButton,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#SaveAndCancelButton,
+    .row .col-12 .box .icon #aspxpopupform .info .col-12 ul li.page-item div#SaveAndCancelButton_CD{
+        width: 258px !important;
+    }
+}
+
+.dates {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-ul > .dropdown-menu {
+    display: block !important;
+}
+
+.show-ul:hover > .dropdown-menu {
+    display: none;
+}
+
+.redaktor-container strong {
+    font-weight: bold;
+}

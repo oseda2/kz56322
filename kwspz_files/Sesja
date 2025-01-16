@@ -1,0 +1,93 @@
+var licznikSesji = (function() {
+
+    var confirmPopup;
+    var pozostaloSekund;
+    var odliczanie;
+    var przedluzanie;
+    var element;
+    var przedluzSesjeUrl;
+    var wyswietlanieAlertu;
+    var logoutUrl;
+    var aktywnosc = false;
+
+    var bindEvents = function () {
+        element.mousemove(function () { onWykrytoAktywnosc(); });
+        //element.keydown(function () { onWykrytoAktywnosc(); });
+        //element.click(function () { onWykrytoAktywnosc(); });
+    };
+
+    var onWykrytoAktywnosc = function() {
+        aktywnosc = true;
+    };
+
+    var przedluzSesje = function() {
+        if (aktywnosc) {
+            $.ajax({
+                // Loader - Global events can be disabled for a particular Ajax request (https://api.jquery.com/Ajax_Events/)
+                global: false,
+                type: "POST",
+                url: przedluzSesjeUrl,
+                success: function(data, status, jqxhr) {
+                    aktywnosc = false;
+                    pozostaloSekund = data.timeout;
+                  
+                    
+                },
+                error: function(jqxhr, status, err) {
+                    
+                }
+            });
+        }
+        przedluzanie = setTimeout(przedluzSesje, 30000);
+    };
+
+    var odswiezLicznik = function() {
+        if (pozostaloSekund > 0) {
+            --pozostaloSekund;
+            var h = Math.floor(pozostaloSekund / 3600);
+            var m = Math.floor((pozostaloSekund % 3600) / 60);
+            var s = pozostaloSekund - 60 * m - 3600 * h;
+            $('#licznikCzasu').html((h < 10 ? '0' : '') + h + ':' + (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s);
+            if (pozostaloSekund <= 60) {
+                $('#licznikCzasu').css("color", "red");
+            }
+        } else {
+            window.location = wylogujUrl;
+        }
+    };
+
+    var sprawdzCzyWyswietlicAlert = function() {
+        if (pozostaloSekund <= 60) {
+            clearTimeout(przedluzanie);
+            clearInterval(wyswietlanieAlertu);
+            confirmPopup.pokaz();
+        }
+    };
+
+    return {
+        init: function(timeoutSec, kontener, url, logOutUrl, takLabel, nieLabel, komunikat, dxConfirm) {
+            pozostaloSekund = timeoutSec;
+            przedluzSesjeUrl = url;
+            wylogujUrl = logOutUrl;
+            element = kontener;
+            confirmPopup = dxConfirm;
+            confirmPopup.init(
+                function() {
+                    przedluzSesje();
+                    aktywnosc = true;
+                    wyswietlanieAlertu = setInterval(sprawdzCzyWyswietlicAlert, 1000);
+                },
+                function() {
+                    window.location = wylogujUrl;
+                }
+            );
+            confirmPopup.ustawEtykieteTak(takLabel);
+            confirmPopup.ustawEtykieteNie(nieLabel);
+            confirmPopup.ustawKomunikat(komunikat);
+            bindEvents();
+            odliczanie = setInterval(odswiezLicznik, 1000);
+            przedluzanie = setTimeout(przedluzSesje, 30000);
+            wyswietlanieAlertu = setInterval(sprawdzCzyWyswietlicAlert, 1000);
+        }
+    };
+})();
